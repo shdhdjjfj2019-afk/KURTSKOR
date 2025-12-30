@@ -28,12 +28,22 @@
       font-weight: bold;
       color: #ffd166;
     }
+
+    img {
+      width: 200px;
+      margin: 20px auto;
+      display: block;
+    }
   </style>
 </head>
 
 <body>
 
   <h1>⚽ Futbol Skorları</h1>
+
+  <!-- RESİM BURADA -->
+  <img src="ses.png">
+
 
   <button onclick="goster()">
     Maçı Göster
@@ -46,7 +56,7 @@
       const skor = document.getElementById("skor");
 
       if (skor.innerText === "") {
-        skor.innerText = "KÜRTSPOR 2 - 1 KÜRTOLMAYANSPOR";
+        skor.innerText = "TAKIM A 2 - 1 TAKIM B";
       } else {
         skor.innerText = "";
       }
