@@ -10,32 +10,44 @@
       color: white;
       font-family: Arial, sans-serif;
       text-align: center;
-      padding-top: 40px;
+
+      /* SAYFAYI DİKEY FLEX YAPIYORUZ */
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 42px;
     }
 
     button {
       background-color: #fca311;
       border: none;
-      padding: 12px 25px;
-      font-size: 18px;
-      border-radius: 6px;
+      padding: 14px 35px;
+      font-size: 20px;
+      border-radius: 10px;
       cursor: pointer;
+      margin-top: 30px;
     }
 
     #skor {
-      margin-top: 25px;
-      font-size: 22px;
+      margin-top: 40px;
+      font-size: 28px;
       font-weight: bold;
       color: #ffd166;
     }
 
+    /* GÖRSELİ SAYFANIN EN ALTINA SABİTLİYOR */
     .logo {
       width: 150px;
       height: 150px;
       object-fit: cover;
       border-radius: 50%;
-      display: block;
-      margin: 40px auto 0;
+      margin-top: auto;
+      margin-bottom: 30px;
+      align-self: center;
     }
   </style>
 </head>
@@ -51,11 +63,11 @@
   <p id="skor"></p>
 
   <!-- GÖRSEL EN AŞAĞIDA -->
-  <img src="ses.png" class="logo">
+  <img src="ses.png" class="logo" alt="Takım Logosu">
 
   <script>
     function gosterSkor() {
-      var skor = document.getElementById("skor");
+      const skor = document.getElementById("skor");
 
       if (skor.innerText === "") {
         skor.innerText = "TAKIM A 2 - 1 TAKIM B";
