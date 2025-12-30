@@ -10,7 +10,13 @@
       color: white;
       font-family: Arial, sans-serif;
       text-align: center;
-      padding-top: 50px;
+      padding-top: 40px;
+    }
+
+    img {
+      width: 200px;
+      display: block;
+      margin: 20px auto;
     }
 
     button {
@@ -23,16 +29,10 @@
     }
 
     #skor {
-      margin-top: 30px;
+      margin-top: 25px;
       font-size: 22px;
       font-weight: bold;
       color: #ffd166;
-    }
-
-    img {
-      width: 200px;
-      margin: 20px auto;
-      display: block;
     }
   </style>
 </head>
@@ -41,19 +41,18 @@
 
   <h1>⚽ Futbol Skorları</h1>
 
-  <!-- RESİM BURADA -->
-  <img src="ses.png">
+  <!-- GÖRSEL -->
+  <img src="ses.png" alt="Takım Logosu">
 
-
-  <button onclick="goster()">
+  <button onclick="gosterSkor()">
     Maçı Göster
   </button>
 
   <p id="skor"></p>
 
   <script>
-    function goster() {
-      const skor = document.getElementById("skor");
+    function gosterSkor() {
+      var skor = document.getElementById("skor");
 
       if (skor.innerText === "") {
         skor.innerText = "TAKIM A 2 - 1 TAKIM B";
