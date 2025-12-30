@@ -1,19 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Futbol Skorları</title>
+
+  <style>
+    body {
+      background-color: #0b132b;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    h1 {
+      color: #5bc0be;
+    }
+
+    button {
+      background-color: #fca311;
+      border: none;
+      padding: 12px 25px;
+      font-size: 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #e69500;
+    }
+
+    #skor {
+      margin-top: 30px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #ffd166;
+    }
+  </style>
+</head>
+
 <body>
 
-<h1>⚽ Futbol Skorları</h1>
+  <h1>⚽ Futbol Skorları</h1>
 
-<button onclick="goster()">Maçı Göster</button>
+  <button onclick="goster()">Maçı Göster</button>
 
-<p id="skor"></p>
+  <p id="skor"></p>
 
-<script>
-function goster() {
-    document.getElementById("skor").innerHTML =
-    "KÜRTSPOR 2 - 1 KÜRTOLMAYANSPOR";
-}
-</script>
+  <script>
+    function goster() {
+      document.getElementById("skor").innerHTML =
+      "KÜRTSPOR 2 - 1 KÜRTOLMAYANSPOR";
+    }
+  </script>
 
 </body>
 </html>
