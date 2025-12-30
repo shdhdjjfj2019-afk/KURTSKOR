@@ -10,12 +10,8 @@
       color: white;
       font-family: Arial, sans-serif;
       text-align: center;
-      min-height: 100vh;
       margin: 0;
-
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      padding-bottom: 60px; /* RESİM İÇİN ALT BOŞLUK */
     }
 
     h1 {
@@ -31,7 +27,6 @@
       border-radius: 10px;
       cursor: pointer;
       margin-top: 30px;
-      width: auto;          /* BUTON ARTIK UZAMAZ */
     }
 
     #skor {
@@ -47,9 +42,8 @@
       height: 140px;
       object-fit: cover;
       border-radius: 50%;
-      margin-top: auto;
-      margin-bottom: 25px;
       display: block;
+      margin: 80px auto 0; /* ALTTA AMA KESİLMEZ */
     }
   </style>
 </head>
@@ -62,7 +56,7 @@
 
   <p id="skor"></p>
 
-  <!-- GÖRSEL EN ALTTA -->
+  <!-- GÖRSEL -->
   <img src="ses.png" class="logo">
 
   <script>
