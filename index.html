@@ -13,12 +13,6 @@
       padding-top: 40px;
     }
 
-    img {
-      width: 200px;
-      display: block;
-      margin: 20px auto;
-    }
-
     button {
       background-color: #fca311;
       border: none;
@@ -34,6 +28,15 @@
       font-weight: bold;
       color: #ffd166;
     }
+
+    .logo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+      margin: 40px auto 0;
+    }
   </style>
 </head>
 
@@ -41,14 +44,14 @@
 
   <h1>⚽ Futbol Skorları</h1>
 
-  <!-- GÖRSEL -->
-  <img src="ses.png" alt="Takım Logosu">
-
   <button onclick="gosterSkor()">
     Maçı Göster
   </button>
 
   <p id="skor"></p>
+
+  <!-- GÖRSEL EN AŞAĞIDA -->
+  <img src="ses.png" class="logo">
 
   <script>
     function gosterSkor() {
